@@ -1,0 +1,32 @@
+Source: raft
+Section: devel
+Priority: optional
+Maintainer: Stéphane Graber <stgraber@ubuntu.com>
+Build-Depends: debhelper (>= 10),
+               pkg-config,
+               liblz4-dev,
+               libuv1-dev
+Homepage: https://github.com/canonical/raft
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+
+Package: libraft0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Description: C implementation of the Raft consensus protocol - library
+ libraft is a simple implement of the Raft consensus protocol in C.
+ .
+ This package contains the library itself.
+
+Package: libraft-dev
+Section: libdevel
+Architecture: any
+Depends: libraft0 (= ${binary:Version}), ${misc:Depends}
+Multi-Arch: same
+Description: C implementation of the Raft consensus protocol - headers
+ libraft is a simple implement of the Raft consensus protocol in C.
+ .
+ This package contains the development files (headers, static libraries)

@@ -1,0 +1,5 @@
+usr/include/*.h
+usr/include/raft/*.h
+usr/lib/*/libraft.a
+usr/lib/*/libraft.so
+usr/lib/*/pkgconfig/raft.pc
