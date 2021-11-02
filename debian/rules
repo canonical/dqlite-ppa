@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+include /usr/share/dpkg/default.mk
+
+PKGDIR=debian/tmp
+export CGO_LDFLAGS_ALLOW=-Wl,-z,now
+
+%:
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_install:
+	rm -rf debian/tmp/usr/share/gocode/src/github.com/canonical/go-dqlite/vendor/
+
+	dh_install
