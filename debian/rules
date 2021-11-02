@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND = -Werror
+
+export SOVER=0
+export SONAME=libdqlite.so.$(SOVER)
+export SOPKG=libdqlite$(SOVER)
+
+%:
+	dh $@ --with autoreconf
