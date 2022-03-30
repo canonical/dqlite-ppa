@@ -10,7 +10,7 @@ Homepage: https://github.com/canonical/raft
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
 
-Package: libraft0
+Package: libraft2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -24,7 +24,7 @@ Description: C implementation of the Raft consensus protocol - library
 Package: libraft-dev
 Section: libdevel
 Architecture: any
-Depends: libraft0 (= ${binary:Version}), ${misc:Depends}
+Depends: libraft2 (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
 Description: C implementation of the Raft consensus protocol - headers
  libraft is a simple implement of the Raft consensus protocol in C.
