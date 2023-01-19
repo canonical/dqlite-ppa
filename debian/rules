@@ -10,5 +10,7 @@ export SOVER = 0
 export SONAME = libraft.so.$(SOVER)
 export SOPKG = libraft(SOVER)
 
+export LIBRAFT_TRACE=1
+
 %:
 	dh $@ --with autoreconf
