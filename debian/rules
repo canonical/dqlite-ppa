@@ -10,5 +10,8 @@ export SOVER=0
 export SONAME=libdqlite.so.$(SOVER)
 export SOPKG=libdqlite$(SOVER)
 
+export LIBDQLITE_TRACE=1
+export LIBRAFT_TRACE=1
+
 %:
 	dh $@ --with autoreconf
