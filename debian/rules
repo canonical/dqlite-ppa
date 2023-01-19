@@ -6,6 +6,9 @@ include /usr/share/dpkg/default.mk
 PKGDIR=debian/tmp
 export CGO_LDFLAGS_ALLOW=-Wl,-z,now
 
+export LIBRAFT_TRACE=1
+export LIBDQLITE_TRACE=1
+
 %:
 	dh $@ --buildsystem=golang --with=golang
 
