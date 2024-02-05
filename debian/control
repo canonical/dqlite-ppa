@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stéphane Graber <stgraber@ubuntu.com>
 Build-Depends: debhelper (>= 10),
                pkg-config,
-               libraft-dev,
+               libraft-canonical-dev,
                libsqlite3-dev,
                libuv1-dev
 Homepage: https://github.com/canonical/dqlite
@@ -25,7 +25,7 @@ Description: Distributed sqlite database using Raft - library
 Package: libdqlite-dev
 Section: libdevel
 Architecture: any
-Depends: libdqlite0 (= ${binary:Version}), ${misc:Depends}, libraft-dev, libuv1-dev, libsqlite3-dev
+Depends: libdqlite0 (= ${binary:Version}), ${misc:Depends}, libraft-canonical-dev, libuv1-dev, libsqlite3-dev
 Multi-Arch: same
 Description: Distributed sqlite database using Raft - library
  libdqlite is a sqlite and Raft based distributed database.
