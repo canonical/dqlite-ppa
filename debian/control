@@ -1,7 +1,7 @@
 Source: dqlite
 Section: devel
 Priority: optional
-Maintainer: Stéphane Graber <stgraber@ubuntu.com>
+Maintainer: Mathieu Borderé <mathieu.bordere@canonical.com>
 Build-Depends: debhelper (>= 10),
                pkg-config,
                libraft-canonical-dev,
