@@ -25,7 +25,7 @@ Description: C implementation of the Raft consensus protocol - library
 Package: libraft-canonical-dev
 Section: libdevel
 Architecture: any
-Depends: libraft3 (= ${binary:Version}), ${misc:Depends}
+Depends: libraft3-canonical (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
 Conflicts: libraft-dev
 Description: C implementation of the Raft consensus protocol - headers
