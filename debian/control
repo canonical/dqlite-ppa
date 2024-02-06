@@ -1,7 +1,7 @@
-Source: raft
+Source: raft-canonical
 Section: devel
 Priority: optional
-Maintainer: Stéphane Graber <stgraber@ubuntu.com>
+Maintainer: Mathieu Borderé <mathieu.bordere@canonical.com>
 Build-Depends: debhelper (>= 10),
                pkg-config,
                liblz4-dev,
@@ -10,22 +10,24 @@ Homepage: https://github.com/canonical/raft
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
 
-Package: libraft3
+Package: libraft3-canonical
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libraft3
 Description: C implementation of the Raft consensus protocol - library
  libraft is a simple implement of the Raft consensus protocol in C.
  .
  This package contains the library itself.
 
-Package: libraft-dev
+Package: libraft-canonical-dev
 Section: libdevel
 Architecture: any
-Depends: libraft3 (= ${binary:Version}), ${misc:Depends}
+Depends: libraft3-canonical (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
+Conflicts: libraft-dev
 Description: C implementation of the Raft consensus protocol - headers
  libraft is a simple implement of the Raft consensus protocol in C.
  .
