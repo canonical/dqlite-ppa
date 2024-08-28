@@ -1,0 +1,8 @@
+name: Build PPA source packages
+on:
+  pull_request:
+    branches:
+      - dqlite
+jobs:
+  build:
+    uses: actions/checkout@v4
