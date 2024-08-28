@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Cole Miller <cole.miller@canonical.com>
 Build-Depends: debhelper (>= 10),
-               pkg-config,
+               pkgconf,
                libsqlite3-dev,
                libuv1-dev
 Homepage: https://github.com/canonical/dqlite
