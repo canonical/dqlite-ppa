@@ -5,7 +5,8 @@ Maintainer: Cole Miller <cole.miller@canonical.com>
 Build-Depends: debhelper (>= 10),
                pkgconf,
                libsqlite3-dev,
-               libuv1-dev
+               libuv1-dev,
+               liblz4-dev
 Homepage: https://github.com/canonical/dqlite
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
@@ -24,7 +25,11 @@ Description: Distributed sqlite database using Raft - library
 Package: libdqlite-dev
 Section: libdevel
 Architecture: any
-Depends: libdqlite0 (= ${binary:Version}), ${misc:Depends}, libuv1-dev, libsqlite3-dev
+Depends: libdqlite0 (= ${binary:Version}),
+         ${misc:Depends},
+         libsqlite3-dev,
+         libuv1-dev,
+         liblz4-dev
 Multi-Arch: same
 Description: Distributed sqlite database using Raft - library
  libdqlite is a sqlite and Raft based distributed database.
