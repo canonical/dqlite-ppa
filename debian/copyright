@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: go-dqlite
-Upstream-Contact: stephane.graber@canonical.com
+Upstream-Contact: cole.miller@canonical.com
 Source: https://github.com/canonical/go-dqlite
 
 Files: *

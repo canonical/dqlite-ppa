@@ -1,7 +1,7 @@
 Source: go-dqlite
 Section: devel
 Priority: optional
-Maintainer: Mathieu Borderé <mathieu.bordere@canonical.com>
+Maintainer: Cole Miller <cole.miller@canonical.com>
 Build-Depends: debhelper (>= 10),
                dh-golang,
                golang-go,
