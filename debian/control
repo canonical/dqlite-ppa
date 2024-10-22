@@ -1,4 +1,4 @@
-Source: dqlite
+Source: dqlite1.17
 Section: devel
 Priority: optional
 Maintainer: Cole Miller <cole.miller@canonical.com>
@@ -11,7 +11,7 @@ Homepage: https://github.com/canonical/dqlite
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
 
-Package: libdqlite0
+Package: libdqlite1.17-0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -22,10 +22,10 @@ Description: Distributed sqlite database using Raft - library
  .
  This package contains the library itself.
 
-Package: libdqlite-dev
+Package: libdqlite1.17-dev
 Section: libdevel
 Architecture: any
-Depends: libdqlite0 (= ${binary:Version}),
+Depends: libdqlite1.17-0 (= ${binary:Version}),
          ${misc:Depends},
          libsqlite3-dev,
          libuv1-dev,
