@@ -12,7 +12,7 @@ Standards-Version: 4.5.1
 Rules-Requires-Root: no
 XS-Go-Import-Path: github.com/canonical/go-dqlite/v2
 
-Package: dqlite-tools
+Package: dqlite-tools-v2
 Section: database
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
