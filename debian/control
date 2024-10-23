@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 10),
 Homepage: https://github.com/canonical/go-dqlite
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
-XS-Go-Import-Path: github.com/canonical/go-dqlite
+XS-Go-Import-Path: github.com/canonical/go-dqlite/v2
 
 Package: dqlite-tools
 Section: database

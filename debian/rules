@@ -12,6 +12,6 @@ export LIBDQLITE_TRACE=1
 	dh $@ --buildsystem=golang --with=golang
 
 override_dh_install:
-	rm -rf debian/tmp/usr/share/gocode/src/github.com/canonical/go-dqlite/vendor/
+	rm -rf debian/tmp/usr/share/gocode/src/github.com/canonical/go-dqlite/v2/vendor/
 
 	dh_install
