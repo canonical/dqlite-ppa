@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Cole Miller <cole.miller@canonical.com>
 Build-Depends: debhelper (>= 10),
                dh-golang,
-               golang-go,
+               golang-go (>= 1.22.2-2) | golang-1.22-go,
                pkg-config,
                libdqlite-dev
 Homepage: https://github.com/canonical/go-dqlite
