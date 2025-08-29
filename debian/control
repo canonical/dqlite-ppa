@@ -1,7 +1,7 @@
 Source: dqlite
 Section: devel
 Priority: optional
-Maintainer: Cole Miller <cole.miller@canonical.com>
+Maintainer: Marco Manino <marco.manino@canonical.com>
 Build-Depends: debhelper (>= 10),
                pkgconf,
                libsqlite3-dev,
