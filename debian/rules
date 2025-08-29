@@ -11,10 +11,17 @@ export SONAME=libdqlite.so.$(SOVER)
 export SOPKG=libdqlite$(SOVER)
 
 export LIBDQLITE_TRACE=1
-export LIBRAFT_TRACE=1
 
 %:
 	dh $@ --with autoreconf
 
 override_dh_auto_configure:
 	dh_auto_configure -- --enable-build-raft
+
+override_dh_auto_test:
+	# Tests consume a lot of resources on
+	# smaller systems so it is best not to 
+	# run them in parallel. Build can still
+	# be parallelized as usual.
+	$(MAKE) -j$(shell nproc) check-norun
+	$(MAKE) -j1 check
